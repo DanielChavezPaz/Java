@@ -1,6 +1,4 @@
-/*
- * Daniel Chavez
- */
+//Daniel Chavez
 public class Fruit implements Comparable<Fruit>{
 String name;
 double weight;
@@ -54,7 +52,4 @@ public int compareTo(Fruit aFruit) {
 public String toString() {
 	return "Type: " + this.name + " Weight:" + this.weight;
 }
-	
-	
-
 }

@@ -25,5 +25,6 @@ public class BubbleSorter {
 		for(int i = 0; i < sort.length; i++) {
 			System.out.println(sort[i]);
 		}
+	keyboard.close();
 	}
 }
