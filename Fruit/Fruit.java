@@ -3,10 +3,10 @@ public class Fruit implements Comparable<Fruit>{
 String name;
 double weight;
 //public constructor
-public Fruit(String xName, double xWeight) {
-	name = xName;
-	if(xWeight >= 0) {
-		weight = xWeight;
+public Fruit(String name, double weight) {
+	this.name = name;
+	if(weight >= 0) {
+		this.weight = weight;
 	}
 }
 //default constructor
@@ -31,16 +31,16 @@ public void setWeight(double weight) {
 	this.weight = weight;
 }
 //compareTo
-public int compareTo(Fruit aFruit) {
+public int compareTo(Fruit fruit) {
 	int check = 0;
-	if(aFruit.getName().equalsIgnoreCase("apple") || aFruit.getName().equalsIgnoreCase("orange") || aFruit.getName().equalsIgnoreCase("banana")
-		|| aFruit.getName().equalsIgnoreCase("kiwi") || aFruit.getName().equalsIgnoreCase("tomato")) {
-		if(this.getWeight() > aFruit.getWeight())
+	if(fruit.getName().equalsIgnoreCase("apple") || fruit.getName().equalsIgnoreCase("orange") || fruit.getName().equalsIgnoreCase("banana")
+		|| fruit.getName().equalsIgnoreCase("kiwi") || fruit.getName().equalsIgnoreCase("tomato")) {
+		if(this.getWeight() > fruit.getWeight())
 			check = 1;
-		else if(this.getWeight() < aFruit.getWeight())
+		else if(this.getWeight() < fruit.getWeight())
 			check = -1;
-		else if(this.getWeight() == aFruit.getWeight()) {
-			check = this.getName().compareTo(aFruit.getName());
+		else if(this.getWeight() == fruit.getWeight()) {
+			check = this.getName().compareTo(fruit.getName());
 		}
 	}
 	else

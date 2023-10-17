@@ -13,9 +13,9 @@ public class FruitTreeTester {
 		{
 			String textLine = fileScanner.nextLine(); //Separates line from line
 			String [] splitLines = textLine.split("\t");
-			String xName = splitLines[0];
-			double xWeight = Double.parseDouble(splitLines[1]);
-			Fruit temp = new Fruit(xName, xWeight);
+			String name = splitLines[0];
+			double weight = Double.parseDouble(splitLines[1]);
+			Fruit temp = new Fruit(name, weight);
 			Fruits.add(temp); //add to binary search tree	
 		}
 	}
